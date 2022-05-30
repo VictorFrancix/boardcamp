@@ -5,8 +5,6 @@ export async function getCategories(req, res){
     try{
         const result = await connection.query('SELECT * FROM categories');
 
-    console.log(result.rows); 
-
     res.status(200).send(result.rows);
     }catch(e){
         console.log(e);

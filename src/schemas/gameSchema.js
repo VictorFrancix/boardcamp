@@ -5,6 +5,6 @@ export const gameSchema =
         name: joi.string().required(),
         image: joi.string().required(),
         pricePerDay: joi.number().required(),
-        categoryId: joi.string().required(),
-        stockTotal: joi.number().required()
+        categoryId: joi.number().required(),
+        stockTotal: joi.number().required(),
     });

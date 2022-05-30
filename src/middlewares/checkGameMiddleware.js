@@ -1,3 +1,5 @@
+import connection from "../db.js";
+
 export async function checkGameExists(req, res, next) {
     const name = req.body.name;
 
@@ -18,4 +20,4 @@ export async function checkGameExists(req, res, next) {
         console.log(e);
         res.sendStatus(500);
     }
-};
+}

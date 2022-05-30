@@ -4,8 +4,6 @@ export async function getGames(req, res) {
     let filter = req.query.name?.toLowerCase();
     filter = filter ? filter + "%" : "%";
 
-    console.log(filter)
-
     try {
         const result = await connection.query(
             `SELECT games.*, categories.name AS "categoryName" 
